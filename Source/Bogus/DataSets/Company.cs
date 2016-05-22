@@ -36,15 +36,16 @@ namespace Bogus.DataSets
         /// <param name="formatIndex">0: name + suffix, 1: name-name, 2: name, name and name."</param>
         public string CompanyName(int? formatIndex = null)
         {
-            var formats = new[]
-                {
-                    "{{name.lastName}} {{company.companySuffix}}",
-                    "{{name.lastName}} - {{name.lastName}}",
-                    "{{name.lastName}}, {{name.lastName}} and {{name.lastName}}"
-                };
+            return "Marcus Rocks";
+            //var formats = new[]
+            //    {
+            //        "{{name.lastName}} {{company.companySuffix}}",
+            //        "{{name.lastName}} - {{name.lastName}}",
+            //        "{{name.lastName}}, {{name.lastName}} and {{name.lastName}}"
+            //    };
 
-            var index = formatIndex ?? Random.Number(formats.Length - 1);
-            return CompanyName(formats[index]);
+            //var index = formatIndex ?? Random.Number(formats.Length - 1);
+            //return CompanyName(formats[index]);
         }
 
         /// <summary>
